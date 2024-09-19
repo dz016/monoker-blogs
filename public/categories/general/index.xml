@@ -6,8 +6,15 @@
     <description>Recent content in General on Monoker Bloging</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Sep 2024 20:22:18 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 22:55:24 +0530</lastBuildDate>
     <atom:link href="https://monkerblogs.netlify.app/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Second Post</title>
+      <link>https://monkerblogs.netlify.app/my-second-post/</link>
+      <pubDate>Thu, 19 Sep 2024 22:55:24 +0530</pubDate>
+      <guid>https://monkerblogs.netlify.app/my-second-post/</guid>
+      <description></description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>https://monkerblogs.netlify.app/my-first-post/</link>

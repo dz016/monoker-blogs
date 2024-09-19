@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Monoker Bloging</title>
+    <link>https://monkerblogs.netlify.app/categories/general/</link>
+    <description>Recent content in General on Monoker Bloging</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Sep 2024 20:22:18 +0530</lastBuildDate>
+    <atom:link href="https://monkerblogs.netlify.app/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://monkerblogs.netlify.app/my-first-post/</link>
+      <pubDate>Thu, 19 Sep 2024 20:22:18 +0530</pubDate>
+      <guid>https://monkerblogs.netlify.app/my-first-post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

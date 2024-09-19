@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      centent="{{or .Params.description .Site.Params.description }}"
+    />
+    <!-- Remove duplicate CSS link -->
+    <link rel="stylesheet" href="/styles/styles.css?v={{ now.Unix }}" />
+
+    <title>{{ .Title}}</title>
+  </head>
+  <body>
+    <script src="js/search.js"></script>
+    <div class="container">
+      <!-- Navbar partial -->
+      {{ partial "navbar" . }}
+
+      <!-- Main content block -->
+      {{ block "main" . }} {{ end }}
+
+      <!-- Footer partial -->
+      {{ partial "footer" . }}
+    </div>
+
+    <script>
+      function filterPosts() {
+        // Get the input value
+        var input = document.getElementById("searchInput").value.toLowerCase();
+
+        // Get all the posts by their title class
+        var posts = document.querySelectorAll(".listItem");
+
+        // Loop through the posts and check if the title contains the input value
+        posts.forEach(function (post) {
+          var title = post
+            .querySelector(".postTitle")
+            .textContent.toLowerCase();
+
+          if (title.includes(input)) {
+            post.style.display = ""; // Show post
+          } else {
+            post.style.display = "none"; // Hide post
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{{ define "main"}}
+<div class="single">
+  <div class="singletimeCat">
+    <div class="singleItemCategories">
+      {{ range (.GetTerms "categories") }}
+      <a class="singlecat" href="{{.Permalink}}">{{.Name}}</a>
+
+      {{ end }}
+    </div>
+    <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
+  </div>
+  <br />
+  <br />
+
+  <div class="single-content">{{.Content}}</div>
+</div>
+{{end}}

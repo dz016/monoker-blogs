@@ -1,0 +1,8 @@
+baseURL = 'https://monkerblogs.netlify.app/'
+languageCode = 'en-us'
+title = 'Monoker Bloging'
+paginate = 10
+[params]
+description ="This is monker bloging webpage."
+  dateFormat = "Jan 2, 2006"
+

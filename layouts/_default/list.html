@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<h1 class="header">MY BLOGS</h1>
+<p class="headdesc">
+  this is my bolg yes it is learn and stuff this is my bolg yes it is learn and
+  stuffthis is my
+</p>
+<br />
+<br />
+<br />
+
+<hr class="dotted-lines" />
+<br />
+<br />
+
+<div class="list">
+  {{/*
+  <div class="heading">
+    <h1>Engineering Blog</h1>
+  </div>
+  */}} {{ range .Pages }}
+
+  <div class="listItem">
+    <div class="timeCat">
+      <div class="listItemCategories">
+        {{ range (.GetTerms "categories") }}
+        <a class="cat" href="{{.Permalink}}">{{.Name}}</a>
+
+        {{ end }}
+      </div>
+      <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
+    </div>
+
+    <div class="listItemText"></div>
+    <h1 class="listheading">
+      <a class="head postTitle" href="{{.Permalink}}">{{.Title}}</a>
+    </h1>
+
+    <p class="listItemDesc">{{.Params.description}}</p>
+    <br />
+
+    <div style="font-weight: 100">{{.Params.author}}</div>
+  </div>
+  {{ end }} {{ template "_internal/pagination.html" . }}
+  <br />
+  <br />
+</div>
+{{ end }}
